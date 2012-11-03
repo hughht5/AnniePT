@@ -1,0 +1,17 @@
+#page {
+	margin: auto;
+	width: 728px;
+}
+
+#bannerLogo {
+	margin: auto;
+	margin-bottom: 10px;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	height: 90px;
+}
+
+#menu {
+	margin-bottom: 10px;
+}
+
