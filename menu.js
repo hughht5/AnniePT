@@ -1,11 +1,4 @@
 $(document).ready(function() {
-
-    //Change contents according to which page we go on.
-
-
-
-
-
     //Apply stilling to the menu
 
     //get the current position of the active item
@@ -50,6 +43,32 @@ $(document).ready(function() {
 
         $(this).addClass('active');
 
+        //work out which page has been clicked on
+        var selected = $('li.active').attr("id");
+
+        //show/hide the relevant contents
+        switch (selected) {
+            case "home":
+                $("#content_home").show();
+                $("#content_contact").hide();
+                $("#content_prices").hide();
+                break;
+            case "contact":
+                $("#content_home").hide();
+                $("#content_contact").show();
+                $("#content_prices").hide();
+                break;
+            case "prices":
+                $("#content_home").hide();
+                $("#content_contact").hide();
+                $("#content_prices").show();
+                break;
+            case "blog":
+                window.open("http://bloggercise1.blogspot.co.uk");
+             
+        }
+        
+        // this stops the href from working. not a problem though as link is remade above
         return false;
 
     });
