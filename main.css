@@ -3,6 +3,28 @@
 	width: 728px;
 }
 
+#AboutMeImg{
+	float: right;
+	margin-left: 15px;
+}
+
+#followMe {
+	float:right;
+}
+
+#fbLike {
+	float: right;
+	margin-left: 10px;
+}
+
+a {
+	text-decoration:none 
+}
+
+body {
+	background-color: #000000;
+}
+
 #bannerLogo {
 	margin: auto;
 	margin-bottom: 10px;
@@ -13,9 +35,11 @@
 
 #menu {
 	margin-bottom: 10px;
+	width:728px;
 }
 
 #content {
+	margin-top:10px;
 	position: relative;
 	border: 1px solid #d6d6d6;
 	background: #fff;
@@ -25,7 +49,16 @@
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgb(240,240,240)), to(rgb(204,204,204)));
-	background: -moz-linear-gradient(top, rgb(240,240,240), rgb(204,204,204));
+	background: #FCF80F;
 }
 
+p{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.titleLinks a{
+	font-family: verdana;
+	font-size: 1em;
+	font-weight:bold;
+	color: #000000;
+}

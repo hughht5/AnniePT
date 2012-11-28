@@ -52,16 +52,25 @@ $(document).ready(function() {
                 $("#content_home").show();
                 $("#content_contact").hide();
                 $("#content_prices").hide();
+                $("#content_aboutMe").hide();
                 break;
             case "contact":
                 $("#content_home").hide();
                 $("#content_contact").show();
                 $("#content_prices").hide();
+                $("#content_aboutMe").hide();
                 break;
             case "prices":
                 $("#content_home").hide();
                 $("#content_contact").hide();
                 $("#content_prices").show();
+                $("#content_aboutMe").hide();
+                break;
+            case "aboutMe":
+                $("#content_home").hide();
+                $("#content_contact").hide();
+                $("#content_prices").hide();
+                $("#content_aboutMe").show();
                 break;
             case "blog":
                 window.open("http://bloggercise1.blogspot.co.uk");

@@ -4,6 +4,7 @@
 		<title>Angharad Personal Training</title>
 		<link rel="stylesheet" type="text/css" href="main.css">
 		<link rel="stylesheet" type="text/css" href="menu.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 		<script src="menu.js"></script>
@@ -12,29 +13,52 @@
 	<body>
 		<div id='page'>
 			<div id='bannerLogo'>
-				<img src='images/bannerLogo.jpg'>
+				<img src='images/logo1.jpg'>
 			</div>
 			<div id='menu'>
 				<div class="lavalamp" >
 					<ul>
-						<li id='home' class="active">
-							<a href="">Home</a>
+						<li id='aboutMe' class="active titleLinks">
+							<a href="">About Me</a>
 						</li>
-						<li id='prices'>
+						<li id='prices' class="titleLinks">
 							<a href="">Prices</a>
 						</li>
-						<li id='contact'>
+						<li id='contact' class="titleLinks">
 							<a href="">Contact Me</a>
 						</li>
-						<li id='blog'>
+						<li id='blog' class="titleLinks">
 							<a href="" target="_blank">Blog</a>
 						</li>
 					</ul>
-					<div class="floatr"></div>
+					<iframe id="fbLike" src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.fitbananapt.co.uk&amp;send=false&amp;layout=standard&amp;width=150&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=35&amp;appId=239478262748246" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:35px;" allowTransparency="true"></iframe>
+					<div id='followMe'>
+						<a href="https://twitter.com/angharadmm1989" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false">Follow @angharadmm1989</a>
+						<script>
+                            ! function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//platform.twitter.com/widgets.js";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, "script", "twitter-wjs");
+						</script>
+					</div>
 				</div>
 			</div>
+
 			<div id='content'>
-				<div id='content_home'>
+				<div hidden=true id='content_prices'>
+					<p>
+						Prices - coming soon!
+					</p>
+				</div>
+				<div id='content_aboutMe'>
+					<div id="AboutMeImg">
+						<img src="images/annie_china_wall.jpg" alt="Angharad on the Great Wall of China!">
+					</div>
 					<p>
 						Hello! My name is Angharad Morgan and I am a qualified Personal trainer, spin, gym based boxing and circuit instructor. I'm originally from South Wales but I'm now based in South London.
 					</p>
@@ -71,11 +95,8 @@
 					<p>
 						Also feel free to call or email to have a chat about personal training sessions and the sort of training you would be interested in.
 					</p>
-					Happy training :)
-				</div>
-				<div hidden=true id='content_prices'>
 					<p>
-						Prices page if you want it.
+						Happy training :)
 					</p>
 				</div>
 				<div hidden=true id='content_contact'>
